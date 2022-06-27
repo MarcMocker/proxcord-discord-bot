@@ -1,8 +1,8 @@
 const { CommandInteraction, Client} = require("discord.js");
 
 module.exports = {
-    name: "test",
-    description: "this is a testing command",
+    name: "help",
+    description: "gives some information about the bot",
 
     /**
      * @param {Clinet} client
@@ -10,6 +10,7 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, interaction, args) => {
-        interaction.reply({ content: "Hello World" });
+        interaction.followUp({ content:
+            "**Proxcord admin bot**\ntype \`/\` to get an overview about the valid commands" });
     }
 }
