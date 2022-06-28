@@ -11,6 +11,7 @@ module.exports = {
      */
     run: async (client, interaction, args) => {
         interaction.followUp({ content:
-            "**Proxcord admin bot**\ntype \`/\` to get an overview about the valid commands" });
+            "**Proxcord admin bot**\ntype \`/\` to get an overview about the valid commands"
+        });
     }
 }
